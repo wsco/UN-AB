@@ -151,7 +151,7 @@ For **Net Conversion** there is in increase in 10 out of the 23 trials at a prob
 #### Summary
 >State whether you used the Bonferroni correction, and explain why or why not. If there are any discrepancies between the effect size hypothesis tests and the sign tests, describe the discrepancy and why you think it arose.
 
-Since the Bonferroni correction is used to mitigate type 1 errors when using multiple metric comparisons that do not correlate with each other it was not used. With the sanity checks and sign tests confirming gross conversion is statistically and practically significant, while net conversion is not, the use of both metrics is justified. Bonferroni could be used if only one of these metrics were used.
+Bonferoni comes with the increased chance of including false negatives while reducing false positives. Additional false negatives in this A/B test are not desired since all of the evaluation metrics need to be satisfied to indicate recommendation for change. With the sanity checks and sign tests confirming gross conversion is statistically and practically significant, while net conversion is not, the use of both evaluation metrics is additionally justified. 
 
 ### Recommendation
 >Make a recommendation and briefly describe your reasoning.
