@@ -100,10 +100,10 @@ Observed value of 28378/(28378+28325) = **0.5005** which is between the interval
 
 **Click Through Probability**
 
-| Control Group Total | Experiment Group Total | SE | Margin Error | Lower | Upper |
-|---|---|---|---|---|---|
-| | | sqrt(0.0821258*(1-0.81258)/344660) | 1.96*0.000468 |  0.0821258-0.00092 |0.0821258+0.00092 |
-| 0.082125814 | 0.082182441 | 0.000468 | 0.00092 | 0.0812 | 0.0830 |
+| Control Group Total | SE | Margin Error | Lower | Upper |
+|---|---|---|---|---|
+| | sqrt(0.0821258*(1-0.81258)/344660) | 1.96*0.000468 |  0.0821258-0.00092 |0.0821258+0.00092 |
+| 0.082125814 | 0.000468 | 0.00092 | 0.0812 | 0.0830 |
 
 Observed value of (345543+344660)/(28378+28325) = **0.0822** which is between the interval [0.0812,0.0830] **Pass Sanity Check**
 
