@@ -8,6 +8,7 @@
 ##### Invariant Metrics:
 + Number of Cookies
 + Number of Clicks
++ Click Through Probability
 ##### Evaluation metrics
 + Gross Conversion
 + Net Conversion
@@ -28,7 +29,7 @@
 
 **Net Conversion:** The number of user-id's to remain enrolled past the 14-day boundary (and make at least one payment) divided by the number of unique cookies to click the 'Start free Trial' button. Again this metric will directly measure the difference between informing users in the experimental group of the time commitment minimums required to finish the course while control group participants will not have that information making this a viable choice for an evaluation metric.
 
-Expectations during experimentation of implementing the new screening information will be observing gross conversion decreases with practical significance indicating lowering costs, while maintaining net conversions with statistical significance.
+Expectations during experimentation of implementing the new screening information will be observing gross conversion decreases with practical significance indicating lowering costs, while not negatively impacting net conversions.
 
 ### Measuring Standard Deviation
 >List the standard deviation of each of your evaluation metrics. (These should be the answers from the "Calculating standard deviation" quiz.)
@@ -69,11 +70,11 @@ With the use of [Evan Millers Sample size calculator](http://www.evanmiller.org/
 #### Duration vs. Exposure
 >Indicate what fraction of traffic you would divert to this experiment and, given this, how many days you would need to run the experiment. (These should be the answers from the "Choosing Duration and Exposure" quiz.)
 
-At 40,000 page views per day dedicating 85% of traffic to the experiment would divert 34,000. At that rate, the experiment could be completed in 21 days.
+At 40,000 page views per day dedicating 100% of traffic to the experiment would divert 34,000. At that rate, the experiment could be completed in 17 days meeting client expectations.
 
 >Give your reasoning for the fraction you chose to divert. How risky do you think this experiment would be for Udacity?
 
-For an experiment like this, I would argue that the risks are fairly low. Users that have already paid are unlikely to affected. This high of a diversion rate would return results in a much faster time than only diverting half or less of the traffic allowing for quicker adoption if the results of a change prove to be beneficial
+For an experiment like this, I would argue that the risks are fairly low. Users that have already paid are unlikely to affected. Experimentation on presenting a group with additional information does not present danger to users or expose or collect sensitive user information. This high of a diversion rate would return results in a much faster time than only diverting half or less of the traffic allowing for quicker adoption if the results of a change prove to be beneficial.
 
 ### Experiment Analysis
 #### Sanity Checks
@@ -96,6 +97,15 @@ Observed value of 345543/(345543+344660) = **0.5006** which is between the inter
 | 28378 | 28325 | 0.0021 | 0.0041 | 0.4959 | 0.5041 |
 
 Observed value of 28378/(28378+28325) = **0.5005** which is between the interval [0.4959,0.5041] **Pass Sanity Check**
+
+**Click Through Probability**
+
+| Control Group Total | Experiment Group Total | SE | Margin Error | Lower | Upper |
+|---|---|---|---|---|---|
+| | | sqrt(0.0821258*(1-0.81258)/344660) | 1.96*0.000468 |  0.0821258-0.00092 |0.0821258+0.00092 |
+| 0.0821258 |  | 0.000468 | 0.00092 | 0.0812 | 0.0830 |
+
+Observed value of 28378/(28378+28325) = **0.0822** which is between the interval [0.0812,0.0830] **Pass Sanity Check**
 
 ### Result Analysis
 #### Effect Size Tests
