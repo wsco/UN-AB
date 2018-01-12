@@ -17,11 +17,11 @@
 
 **Number of Cookies:** The number of unique cookies issued indicates unique visitors to the course overview page. This metric is chosen as one of the invariant metrics since cookies are issued during the page load before users are exposed to experimental factors and is consequentially independent of those factors.
 
-**Number of User-Id's** Number of users that enroll in a free trial. This would not be the same for a control group and experimental group so cannot be used as an evaluation metric. It is also dependent on the experimental factors lead to enrollment in the free trial so this metric is also ruled out as an invariant metric.
+**Number of User-Id's** Number of users that enroll in a free trial. Although this is a metric collected after the experimental begins indicating enrollments, it is just a raw count rather than a normalized value and will most likely differ between experimental and control groups. If it were to be used, it would only indicate part of the hypothesis, when students continue past the free trial. Gross and net conversions are normalized and will be selected as evaluation metrics instead.
 
 **Number of Clicks:** Number of users indicated as unique from cookie data that click 'start free trial' button. This metric is also collected before users are exposed to experimental factors and will also be used for its independence from those factors.
 
-**Click-through probability:** The number of unique cookies to click "Start Free Trial" button divided by the number of unique cookies to view the course overview page. If this were the only metric available it may suffice as an invariant metric due to the fact that it is calculated with values collected before experimental factors are in play. Since the metrics that this calculation is based on are also available this is somewhat redundant.
+**Click-through probability:** The number of unique cookies to click "Start Free Trial" button divided by the number of unique cookies to view the course overview page. Since it can be calculated independently between control and experiment groups it is a valid invariant metric and will be used.
 
 **Gross Conversion:** The number of user-id's to complete a checkout and enroll in the free trial divided by number of unique cookies to click the 'Start Free Trial' button. This has been selected as a valid evaluation metric since it is a dependent on effects of the experiment directly in ratio to a selected Invariant metric. This metric should describe success or failure of experimental factors.
 
@@ -29,7 +29,7 @@
 
 **Net Conversion:** The number of user-id's to remain enrolled past the 14-day boundary (and make at least one payment) divided by the number of unique cookies to click the 'Start free Trial' button. Again this metric will directly measure the difference between informing users in the experimental group of the time commitment minimums required to finish the course while control group participants will not have that information making this a viable choice for an evaluation metric.
 
-Expectations during experimentation of implementing the new screening information will be observing gross conversion decreases with practical significance indicating lowering costs, while not negatively impacting net conversions.
+Expectations during experimentation of implementing the new screening information will be observing gross conversion decreases with practical significance indicating lowering costs, while not negatively impacting net conversions. If net conversions remain stable, while costs are lowered, revenue will affected positively.
 
 ### Measuring Standard Deviation
 >List the standard deviation of each of your evaluation metrics. (These should be the answers from the "Calculating standard deviation" quiz.)
