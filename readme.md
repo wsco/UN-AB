@@ -25,7 +25,7 @@
 
 **Gross Conversion:** The number of user-id's to complete a checkout and enroll in the free trial divided by number of unique cookies to click the 'Start Free Trial' button. This has been selected as a valid evaluation metric since it is a dependent on effects of the experiment directly in ratio to a selected Invariant metric. This metric should describe success or failure of experimental factors.
 
-**Retention:** The number of user-id's to remain enrolled past the 14-day boundary (and thus make at least one payment) divided by the number of user-ids to complete a checkout. The experimental factors in this A/B test will directly contribute to a number of control group cancelations since it involves informing only the experimental users of required time to complete the course.
+**Retention:** The number of user-id's to remain enrolled past the 14-day boundary (and thus make at least one payment) divided by the number of user-ids to complete a checkout. The experimental factors in this A/B test will directly contribute to a number of control group cancelations since it involves informing only the experimental users of required time to complete the course. Although this may be a valid evaluation metric in most aspects, retention would require a much longer time to evaluate, requiring more samples to prove statistical significance since the units of analysis is different from the units of diversion in this case. This longer evaluation time means that it does would be less effective in meeting client expectations.
 
 **Net Conversion:** The number of user-id's to remain enrolled past the 14-day boundary (and make at least one payment) divided by the number of unique cookies to click the 'Start free Trial' button. Again this metric will directly measure the difference between informing users in the experimental group of the time commitment minimums required to finish the course while control group participants will not have that information making this a viable choice for an evaluation metric.
 
@@ -70,7 +70,7 @@ With the use of [Evan Millers Sample size calculator](http://www.evanmiller.org/
 #### Duration vs. Exposure
 >Indicate what fraction of traffic you would divert to this experiment and, given this, how many days you would need to run the experiment. (These should be the answers from the "Choosing Duration and Exposure" quiz.)
 
-At 40,000 page views per day dedicating 100% of traffic to the experiment would divert 34,000. At that rate, the experiment could be completed in 17 days meeting client expectations.
+At 40,000 page views per day dedicating 100% of traffic to the experiment would divert 34,000. At that rate, the experiment could be completed in 18 days meeting client expectations.
 
 >Give your reasoning for the fraction you chose to divert. How risky do you think this experiment would be for Udacity?
 
@@ -151,7 +151,7 @@ For **Net Conversion** there is in increase in 10 out of the 23 trials at a prob
 #### Summary
 >State whether you used the Bonferroni correction, and explain why or why not. If there are any discrepancies between the effect size hypothesis tests and the sign tests, describe the discrepancy and why you think it arose.
 
-Bonferoni comes with the increased chance of including false negatives while reducing false positives. Additional false negatives in this A/B test are not desired since all of the evaluation metrics need to be satisfied to indicate recommendation for change. With the sanity checks and sign tests confirming gross conversion is statistically and practically significant, while net conversion is not, the use of both evaluation metrics is additionally justified. 
+Bonferroni comes with the increased chance of including false negatives while reducing false positives. Additional false negatives in this A/B test are not desired since all of the evaluation metrics need to be satisfied to indicate recommendation for change. With the sanity checks and sign tests confirming gross conversion is statistically and practically significant, while net conversion is not, the use of both evaluation metrics is additionally justified.
 
 ### Recommendation
 >Make a recommendation and briefly describe your reasoning.
